@@ -1,12 +1,12 @@
-
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Cell } from "recharts";
 import { ChartContainer } from "@/components/ui/chart";
 
+// ✅ Translated data labels to English
 const data = [
-  { name: "Operacionais", value: 9 },
-  { name: "Em manutenção", value: 3 },
-  { name: "Paradas", value: 3 },
+  { name: "Operational", value: 9 },
+  { name: "Under Maintenance", value: 3 },
+  { name: "Stopped", value: 3 },
 ];
 
 const barColors = [
@@ -16,9 +16,9 @@ const barColors = [
 ];
 
 const legend = [
-  { label: "Operacionais", color: barColors[0] },
-  { label: "Manutenção", color: barColors[1] },
-  { label: "Paradas", color: barColors[2] },
+  { label: "Operational", color: barColors[0] },
+  { label: "Under Maintenance", color: barColors[1] },
+  { label: "Stopped", color: barColors[2] },
 ];
 
 export default function FleetBarChart() {
